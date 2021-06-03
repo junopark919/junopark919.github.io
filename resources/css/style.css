@@ -10,10 +10,12 @@
 
 html {
     background-color: #fff;
+    color: #555;
     font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {
@@ -37,3 +39,134 @@ html {
     max-width: 1140px;
     margin: 0 auto;
 }
+
+section {
+    padding: 80px 0;
+}
+
+
+/* ---------- HEADINGS ---------- */
+
+h1 {
+    color: #f1d3bc;
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/* ---------- LINKS ---------- */
+
+a {
+    text-decoration: none;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    border-radius: 200px;
+}
+
+
+/* ---------- ICONS ---------- */
+
+.icon {
+    font-size: 3.5em;
+    display: block;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+/* ---------------------------------------- */
+/* HEADER */
+/* ---------------------------------------- */
+
+header {
+    /* background: #3eb489; */
+    background: #262f34;
+    height: 100vh;
+}
+
+.brush {
+    background: url('img/brush.png');
+    width: 976px;
+    height: 755px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: 1s ease-in slidein;
+    z-index: 0;
+}
+
+nav {
+    z-index: 5;
+}
+
+.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 55px;
+    text-transform: uppercase;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a {
+    padding-bottom: 5px;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #f1d3bc;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #f1d3bc;
+}
+
+.intro {
+    margin-top: 200px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #f1d3bc;
+}
+
+@keyframes slidein {
+    from {
+        top: -100%;
+        right: -100%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        right: 0;
+        opacity: 1;
+    }
+}
+
+
+/* ---------------------------------------- */
+/* ABOUT SECTION */
+/* ---------------------------------------- */
+
+.about-section {}
